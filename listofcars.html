@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>CarRentalDubai</title>
+  </head>
+  <div class="navbar">
+    <div class="grid-nav">
+      <div class="grid-nav-block1">
+        <ul>
+          <li><img src="img/logo.png"/></li>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="brands.html">Бренды</a></li>
+          <li><a href="topcars.html">Лучшие автомобили </a></li>
+          <li><a href="listofcars.html">Список всех автомобилей</a></li>
+        </ul>
+      </div>
+      <div class="grid-nav-block2">
+        <ul>
+          <li><a href="#">Блог</a></li>
+          <li><a href="#">Условия аренды</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="grid-nav-block3">
+        <ul>
+          <li><a href="#">О компании</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="#">En</a></li>
+          <li><a href="#">Rus</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="list-of-cars-content">
+    <details class="first-details">
+      <summary>График</summary>
+      <form>
+        <table>
+          <tr>
+            <th>Значение по оси ОХ</th>
+            <th>Результат</th>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" name="one" value="first">Марка<br>
+              <input type="radio" name="one" value="second">Название<br>
+              <input type="radio" name="one" value="third">Страна<br>
+            </td>
+            <td> 
+              <input type="checkbox" name="two">Максимальная мощность<br>
+              <input type="checkbox" name="two">Минимальный двигатель<br>
+              <input type="checkbox" name="two">0-100км/ч<br>
+            </td>
+          </tr>
+        </table>
+      </form>
+      <input type="button" value="Построить">
+    </details>
+    <details> 
+      <summary>Фильтр</summary>
+      <p>Марка: 
+        <input type="text">
+      </p>
+      <p>Название:
+        <input type="text">
+      </p>
+      <p>Страна:
+        <input type="text">
+      </p>
+      <p>Литраж двигателя: от
+        <input type="text"> до 
+        <input type="text">
+      </p>
+      <p>Мощность: от
+        <input type="text"> до 
+        <input type="text">
+      </p>
+    </details>
+    <details> 
+      <summary>Сортировка</summary>
+      <p>Первый уровень: по убыванию? 
+        <input type="checkbox">
+        <select>
+          <option>Нет</option>
+          <option>Марка</option>
+          <option>Название</option>
+          <option>Страна</option>
+          <option>Двигатель</option>
+          <option>Мощность</option>
+          <option>0-100км/ч</option>
+          <option>Цена</option>
+        </select>
+      </p>
+      <p>Второй уровень: по убыванию? 
+        <input type="checkbox">
+        <select>
+          <option>Нет</option>
+          <option>Марка</option>
+          <option>Название</option>
+          <option>Страна</option>
+          <option>Двигатель</option>
+          <option>Мощность</option>
+          <option>0-100км/ч</option>
+          <option>Цена</option>
+        </select>
+      </p>
+      <p>Третий уровень: по убыванию? 
+        <input type="checkbox">
+        <select>
+          <option>Нет</option>
+          <option>Марка</option>
+          <option>Название</option>
+          <option>Страна</option>
+          <option>Двигатель</option>
+          <option>Мощность</option>
+          <option>0-100км/ч</option>
+          <option>Цена</option>
+        </select>
+      </p>
+    </details>
+    <table class="main-table" border="1" cellspacing="0" cellpadding="5" align="center" bordercolor="white">
+      <tr>
+        <th>Марка</th>
+        <th>Название</th>
+        <th>Страна</th>
+        <th>Двигатель (Л)</th>
+        <th>Мощность (л.с.)</th>
+        <th>0-100 км/ч (с)</th>
+        <th>Цена ($)</th>
+      </tr>
+      <tr>
+        <td>Mercedes-Benz</td>
+        <td>AMG GT 63 S 4MATIC+</td>
+        <td>Germany</td>
+        <td>4.0</td>
+        <td>639</td>
+        <td>3.1</td>
+        <td>461 000</td>
+      </tr>
+      <tr>
+        <td>BMW</td>
+        <td>M5 Competition</td>
+        <td>Germany</td>
+        <td>4.4</td>
+        <td>625</td>
+        <td>3.3</td>
+        <td>185 275</td>
+      </tr>
+      <tr>
+        <td>BMW</td>
+        <td>M5 CS</td>
+        <td>Germany</td>
+        <td>4.4</td>
+        <td>635</td>
+        <td>3.0</td>
+        <td>226 500</td>
+      </tr>
+      <tr>
+        <td>Mercedes-Benz</td>
+        <td>E63 AMG 4MATIC+</td>
+        <td>Germany</td>
+        <td>4.0</td>
+        <td>612</td>
+        <td>3.4</td>
+        <td>208 000</td>
+      </tr>
+      <tr>
+        <td>Porsche</td>
+        <td>911 Turbo</td>
+        <td>Germany</td>
+        <td>3.7</td>
+        <td>580</td>
+        <td>2.8</td>
+        <td>258 900</td>
+      </tr>
+      <tr>
+        <td>Porsche</td>
+        <td>911 Turbo S</td>
+        <td>Germany</td>
+        <td>3.7</td>
+        <td>650</td>
+        <td>2.7</td>
+        <td>297 500</td>
+      </tr>
+      <tr>
+        <td>Lamborghini</td>
+        <td>Huracan</td>
+        <td>Italy</td>
+        <td>5.2</td>
+        <td>610</td>
+        <td>3.2</td>
+        <td>217 400</td>
+      </tr>
+      <tr>
+        <td>Lamborghini</td>
+        <td>Aventador</td>
+        <td>Italy</td>
+        <td>6.5</td>
+        <td>780</td>
+        <td>2.8</td>
+        <td>338 000</td>
+      </tr>
+      <tr>
+        <td>Lamborghini</td>
+        <td>Huracan Performante</td>
+        <td>Italy</td>
+        <td>5.2</td>
+        <td>640</td>
+        <td>2.9</td>
+        <td>258 580</td>
+      </tr>
+      <tr>
+        <td>Lamborghini</td>
+        <td>Urus</td>
+        <td>Italy</td>
+        <td>4.0</td>
+        <td>650</td>
+        <td>3.6</td>
+        <td>265 700</td>
+      </tr>
+    </table>
+  </div>
+</html>

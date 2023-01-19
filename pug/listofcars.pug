@@ -1,0 +1,174 @@
+extends template.pug
+include navbar.pug
+block content
+    +navbar()
+    .list-of-cars-content
+        details.first-details
+            summary График
+            form
+                table
+                    tr
+                        th Значение по оси ОХ
+                        th Результат
+                    tr
+                        td
+                            input(type="radio" name="one" value="first")
+                            | Марка<br>
+                            input(type="radio" name="one" value="second")
+                            | Название<br>
+                            input(type="radio" name="one" value="third")
+                            |Страна<br>
+                        td 
+                            input(type="checkbox" name="two")
+                            | Максимальная мощность<br>
+                            input(type="checkbox" name="two")
+                            | Минимальный двигатель<br>
+                            input(type="checkbox" name="two")
+                            | 0-100км/ч<br>
+            input(type="button" value="Построить")
+    
+    
+    
+        details 
+            summary Фильтр
+            p Марка: 
+                input(type="text")
+            p Название:
+                input(type="text")
+            p Страна:
+                input(type="text")
+            p Литраж двигателя: от
+                input(type="text")
+                |  до 
+                input(type="text")
+            p Мощность: от
+                input(type="text")
+                |  до 
+                input(type="text")
+
+
+        details 
+            summary Сортировка
+            p Первый уровень: по убыванию? 
+                input(type="checkbox")
+                select
+                    option Нет
+                    option Марка
+                    option Название
+                    option Страна
+                    option Двигатель
+                    option Мощность
+                    option 0-100км/ч
+                    option Цена
+            p Второй уровень: по убыванию? 
+                input(type="checkbox")
+                select
+                    option Нет
+                    option Марка
+                    option Название
+                    option Страна
+                    option Двигатель
+                    option Мощность
+                    option 0-100км/ч
+                    option Цена
+            p Третий уровень: по убыванию? 
+                input(type="checkbox")
+                select
+                    option Нет
+                    option Марка
+                    option Название
+                    option Страна
+                    option Двигатель
+                    option Мощность
+                    option 0-100км/ч
+                    option Цена
+
+        table.main-table(border="1" cellspacing="0" cellpadding="5" align="center" bordercolor="white")
+            tr
+                th Марка
+                th Название
+                th Страна
+                th Двигатель (Л)
+                th Мощность (л.с.)
+                th 0-100 км/ч (с)
+                th Цена ($)
+            tr
+                td Mercedes-Benz
+                td AMG GT 63 S 4MATIC+
+                td Germany
+                td 4.0
+                td 639
+                td 3.1
+                td 461 000
+            tr
+                td BMW
+                td M5 Competition
+                td Germany
+                td 4.4
+                td 625
+                td 3.3
+                td 185 275
+            tr
+                td BMW
+                td M5 CS
+                td Germany
+                td 4.4
+                td 635
+                td 3.0
+                td 226 500
+            tr
+                td Mercedes-Benz
+                td E63 AMG 4MATIC+
+                td Germany
+                td 4.0
+                td 612
+                td 3.4
+                td 208 000
+            tr
+                td Porsche
+                td 911 Turbo
+                td Germany
+                td 3.7
+                td 580
+                td 2.8
+                td 258 900
+            tr
+                td Porsche
+                td 911 Turbo S
+                td Germany
+                td 3.7
+                td 650
+                td 2.7
+                td 297 500
+            tr
+                td Lamborghini
+                td Huracan
+                td Italy
+                td 5.2
+                td 610
+                td 3.2
+                td 217 400
+            tr
+                td Lamborghini
+                td Aventador
+                td Italy
+                td 6.5
+                td 780
+                td 2.8
+                td 338 000
+            tr
+                td Lamborghini
+                td Huracan Performante
+                td Italy
+                td 5.2
+                td 640
+                td 2.9
+                td 258 580
+            tr
+                td Lamborghini
+                td Urus
+                td Italy
+                td 4.0
+                td 650
+                td 3.6
+                td 265 700

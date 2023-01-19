@@ -1,0 +1,39 @@
+extends template.pug
+include navbar.pug
+block content
+    +navbar()
+    .brands-content
+        .grid-brands
+            .grid-brands-1-1
+                img(src="img/brands.png")
+            .grid-brands-3-1
+                p.font-700 12
+                hr
+                p.font-100 лучших мировых брендов
+            .grid-brands-3-2
+                p.font-700 5
+                hr
+                p.font-100 категорий автомобилей
+            .grid-brands-3-3
+                p.font-700 Яхты
+                hr
+                p.font-100 так же доступны к аренде
+            .grid-brands-4-1
+                img(src="img/Audi.png")
+                p.font-700-30-brands Audi
+                p.font-100.small Страна: Германия
+                    img(src="img/germany.png")
+                p.font-100 Основные категории: Седаны, Купе<br>Машин в парке: 12
+            .grid-brands-4-2
+                img(src="img/Bentley.png")
+                p.font-700-30-brands Bentley
+                p.font-100.small Страна: Великобритания
+                    img(src="img/Uk.png")
+                p.font-100 Основные категории: Купе, Внедорожники, Кабриолеты<br>Машин в парке: 21
+            .grid-brands-4-3
+                img(src="img/BMW.png")
+                p.font-700-30-brands BMW
+                p.font-100.small Страна: Германия
+                    img(src="img/germany.png")
+                p.font-100 Основные категории: Спорткары, Кабриолеты, Внедорожники<br>Машин в парке: 35
+                
